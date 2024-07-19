@@ -15,7 +15,7 @@ class ApiOperations{
   static Future<List<PhotoModel>> GetTrendingWallpapers () async {
     await http.get(Uri.parse("https://api.pexels.com/v1/curated"),
         headers: {
-          "Authorization": "sVjh8j8EdklUKw31JWiCa1dxPsULLndQwtBBPb6H9BjhHaAHfKRBRMGD"
+          "Authorization": "YOUR_AUTHORISATION_KEY"
         }).then((value) {
       //print("RESPONSE REPORT");
       //print(value.body);
